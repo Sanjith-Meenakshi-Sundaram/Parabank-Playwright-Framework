@@ -39,3 +39,4 @@ public class LoginPage extends BasePage {
         return logoutLink.isVisible();
     }
 }
+//login
