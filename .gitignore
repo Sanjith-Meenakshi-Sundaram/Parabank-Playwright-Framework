@@ -1,0 +1,25 @@
+# Eclipse
+.settings/
+.project
+.classpath
+
+# Maven
+target/
+
+# Reports
+extent-report.html
+*.html
+
+# Logs
+*.log
+
+# Screenshots
+screenshots/
+
+# Playwright
+playwright-report/
+test-results/
+
+# OS files
+.DS_Store
+Thumbs.db
