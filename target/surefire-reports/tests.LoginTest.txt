@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: tests.LoginTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.609 s <<< FAILURE! -- in tests.LoginTest
+tests.LoginTest.testLogin -- Time elapsed: 3.606 s <<< ERROR!
+com.microsoft.playwright.PlaywrightException: 
+Error {
+  message='net::ERR_SOCKET_NOT_CONNECTED at https://parabank.parasoft.com/parabank/index.htm
+  name='Error
+  stack='Error: net::ERR_SOCKET_NOT_CONNECTED at https://parabank.parasoft.com/parabank/index.htm
+    at FrameSession._navigate (C:\Users\MEENAK~1.SUN\AppData\Local\Temp\playwright-java-6510944034881526089\package\lib\server\chromium\crPage.js:489:13)
+    at async Frame.gotoImpl (C:\Users\MEENAK~1.SUN\AppData\Local\Temp\playwright-java-6510944034881526089\package\lib\server\frames.js:514:28)
+}
+Call log:
+-   - navigating to "https://parabank.parasoft.com/parabank/index.htm", waiting until "load"
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:419)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:918)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
+	at com.microsoft.playwright.Page.navigate(Page.java:5491)
+	at utils.DriverFactory.initDriver(DriverFactory.java:30)
+	at base.BaseTest.start(BaseTest.java:11)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='net::ERR_SOCKET_NOT_CONNECTED at https://parabank.parasoft.com/parabank/index.htm
+  name='Error
+  stack='Error: net::ERR_SOCKET_NOT_CONNECTED at https://parabank.parasoft.com/parabank/index.htm
+    at FrameSession._navigate (C:\Users\MEENAK~1.SUN\AppData\Local\Temp\playwright-java-6510944034881526089\package\lib\server\chromium\crPage.js:489:13)
+    at async Frame.gotoImpl (C:\Users\MEENAK~1.SUN\AppData\Local\Temp\playwright-java-6510944034881526089\package\lib\server\frames.js:514:28)
+}
+Call log:
+-   - navigating to "https://parabank.parasoft.com/parabank/index.htm", waiting until "load"
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 11 more
+
